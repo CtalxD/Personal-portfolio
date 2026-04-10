@@ -29,6 +29,7 @@ const Navbar: React.FC = () => {
     if (savedStatus === 'open' || savedStatus === 'busy') {
       setWorkStatus(savedStatus);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Listen for work status changes from admin panel
@@ -43,8 +44,10 @@ const Navbar: React.FC = () => {
     return () => {
       window.removeEventListener('workStatusUpdated', handleWorkStatusUpdate);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // Update pill position based on active route
   useEffect(() => {
     const updatePillPosition = () => {
       const activeIndex = navItems.findIndex(item => item.path === location.pathname);
@@ -65,6 +68,7 @@ const Navbar: React.FC = () => {
     updatePillPosition();
     window.addEventListener('resize', updatePillPosition);
     return () => window.removeEventListener('resize', updatePillPosition);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
 
   const setItemRef = (index: number) => (el: HTMLAnchorElement | null) => {
