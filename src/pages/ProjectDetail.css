@@ -1,0 +1,504 @@
+.project-detail {
+  min-height: 100vh;
+  padding: 120px 0 80px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f0f0f 100%);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-bottom: 40px;
+  font-family: inherit;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.project-detail-content {
+  background: rgba(255, 255, 255, 0.04);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 48px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.project-detail-content:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-4px);
+}
+
+.project-detail-header {
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-detail-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.project-detail-meta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-detail-year, .project-detail-role {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.project-detail-year:hover, .project-detail-role:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.detail-section {
+  margin-bottom: 36px;
+}
+
+.detail-section h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: -0.3px;
+}
+
+.detail-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.detail-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail-tech-tag {
+  padding: 5px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.2s ease;
+}
+
+.detail-tech-tag:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.detail-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-features-list li {
+  padding: 8px 0;
+  padding-left: 24px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.2s ease;
+}
+
+.detail-features-list li:last-child {
+  border-bottom: none;
+}
+
+.detail-features-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  transition: transform 0.2s ease;
+}
+
+.detail-features-list li:hover {
+  color: rgba(255, 255, 255, 0.9);
+  transform: translateX(4px);
+}
+
+.detail-features-list li:hover::before {
+  transform: translateX(2px);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Algorithm Details for Truck Simulator */
+.algorithm-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 16px;
+}
+
+.algorithm-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.algorithm-card:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.algorithm-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.algorithm-card p {
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.algorithm-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.algorithm-card li {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+/* Technical Architecture */
+.tech-architecture {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  padding: 16px;
+  border: 0.5px solid rgba(255, 255, 255, 0.05);
+}
+
+.arch-item {
+  padding: 8px 0;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.arch-item:last-child {
+  border-bottom: none;
+}
+
+.arch-item:hover {
+  color: rgba(255, 255, 255, 0.95);
+  transform: translateX(4px);
+}
+
+.arch-item strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+  min-width: 140px;
+  display: inline-block;
+}
+
+/* Game Mechanics */
+.game-mechanics {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  padding: 16px;
+  border: 0.5px solid rgba(255, 255, 255, 0.05);
+}
+
+.game-mechanics p {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.game-mechanics p:last-child {
+  margin-bottom: 0;
+}
+
+.game-mechanics strong {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+/* Unity Note - No red border, matching other styles */
+.unity-note {
+  background: rgba(255, 255, 255, 0.04);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 12px;
+  margin-top: 16px;
+  transition: all 0.3s ease;
+}
+
+.unity-note:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(4px);
+}
+
+.unity-note strong {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+}
+
+/* Project Links - Matching Navbar UI */
+.project-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 8px;
+}
+
+.project-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 40px;
+  padding: 10px 22px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.project-link-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.link-icon {
+  width: 16px;
+  height: 16px;
+  transition: all 0.2s ease;
+}
+
+.project-link-btn:hover .link-icon {
+  transform: scale(1.1);
+}
+
+.youtube-icon {
+  color: #ff4444;
+}
+
+.github-icon {
+  color: #ffffff;
+}
+
+.report-icon {
+  color: #4ade80;
+}
+
+.project-detail-notfound {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: linear-gradient(135deg, #0a0a0a 0%, #0f0f0f 100%);
+}
+
+.project-detail-notfound h2 {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 100px 0 60px;
+  }
+  
+  .project-detail-content {
+    padding: 28px;
+  }
+  
+  .project-detail-title {
+    font-size: 1.8rem;
+  }
+  
+  .detail-section h2 {
+    font-size: 1.1rem;
+  }
+  
+  .back-btn {
+    margin-bottom: 30px;
+  }
+  
+  .project-links-container {
+    flex-direction: column;
+  }
+  
+  .project-link-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .algorithm-details {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .arch-item strong {
+    display: block;
+    margin-bottom: 4px;
+    min-width: auto;
+  }
+  
+  .tech-architecture {
+    padding: 12px;
+  }
+  
+  .game-mechanics {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-detail-content {
+    padding: 20px;
+  }
+  
+  .project-detail-title {
+    font-size: 1.5rem;
+  }
+  
+  .detail-section {
+    margin-bottom: 28px;
+  }
+  
+  .detail-section h2 {
+    font-size: 1rem;
+  }
+  
+  .project-link-btn {
+    padding: 8px 18px;
+    font-size: 0.8rem;
+  }
+  
+  .algorithm-card {
+    padding: 16px;
+  }
+  
+  .algorithm-card h3 {
+    font-size: 0.9rem;
+  }
+  
+  .algorithm-card p {
+    font-size: 0.8rem;
+  }
+  
+  .arch-item {
+    font-size: 0.8rem;
+  }
+  
+  .detail-features-list li {
+    font-size: 0.85rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+.back-btn:focus,
+.project-link-btn:focus,
+.project-dropdown:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+/* Animation for content loading */
+@keyframes contentFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-detail-content {
+  animation: contentFadeIn 0.6s ease-out forwards;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
