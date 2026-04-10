@@ -136,24 +136,24 @@ export const portfolioData: PortfolioData = {
   workExperiences: [
     {
       id: 1,
-      company: "Tech Company",
-      role: "Frontend Developer",
-      year: "2023 - Present",
-      description: "Building responsive web and mobile applications using React and React Native. Focus on clean, maintainable code and optimal performance."
+      company: "",
+      role: "",
+      year: "",
+      description: ""
     },
     {
       id: 2,
-      company: "Design Studio",
-      role: "UI/UX Designer",
-      year: "2022 - 2023",
-      description: "Creating intuitive interfaces in Figma with a focus on user research, wireframing, prototyping, and accessibility standards."
+      company: "",
+      role: "",
+      year: "",
+      description: ""
     },
     {
       id: 3,
-      company: "Agency",
-      role: "Team Lead",
-      year: "2021 - 2022",
-      description: "Experience as Business Analyst and Team Lead. Managing projects using Agile methodology, Jira, and effective communication."
+      company: "",
+      role: "",
+      year: "",
+      description: ""
     }
   ]
 };
